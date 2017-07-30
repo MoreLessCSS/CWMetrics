@@ -1,21 +1,13 @@
 {
     "metrics": [
         {
-            "CheckPort9200" : {
+            "CheckPort5601" : {
 
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
-                "port": "9200",
+                "port": "5601",
                 "namespace": "Vendo-ZML-Monitor",
-                "description": "Monitors port 9200"
-            },
-            "CheckPort9300" : {
-
-                "plugin" : "PortMonitor",
-                "domain": "localhost",
-                "port": "9300",
-                "namespace": "Vendo-ZML-Monitor",
-                "description": "Monitors port 9300"
+                "description": "Monitors port 5601"
             },
             "CheckPort22" : {
 
