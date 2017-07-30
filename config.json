@@ -5,21 +5,21 @@
                 "name" : "PortMonitor",
                 "domain": "localhost",
                 "port": "23",
-                "namespace": "portMonitor_23",
+                "namespace": "ELB Monitoring",
                 "description": "Monitors port 8080"
             },
             "CheckPort22" : {
                 "name" : "PortMonitor1",
                 "domain": "localhost",
                 "port": "22",
-                "namespace": "portMonitor",
+                "namespace": "ELB Monitoring",
                 "description": "Monitors port 22"
             },
             "CheckPort80" : {
                 "name" : "PortMonitor",
                 "domain": "localhost",
                 "port": "80",
-                "namespace": "portMonitor_22",
+                "namespace": "ELB Monitoring",
                 "description": "Monitors port 22"
             }
 

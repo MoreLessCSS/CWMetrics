@@ -17,13 +17,14 @@ echo "instanceID:$instanceId\n";
 $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
-       $className = "CWScripts\\plugins\\" . $metric->name;
+    $className = "CWScripts\\plugins\\" . $metric->name;
 
        echo "MetricName=$metricName\n";
        echo "Metric-name=$metric->name\n";
+       $class = $metric->name;
 
-       if (class_exists("CWScripts\\" . $metric->name)){
-            $ref = "CWScripts\\" . $metric->name;
+       if (class_exists($class)){
+            $ref = $class;
             $obj = new $ref();
        echo "CLASS EXISTS\n";
             }
