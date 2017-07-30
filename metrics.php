@@ -45,7 +45,7 @@ foreach ($config -> metrics as $metrics) {
           'Timestamp'  => time(),
           'Dimensions' => array(
             array('Name' => 'InstanceId', 'Value' => $instanceId),
-            array('Name' => 'Instance Name', 'Value' => $InstanceName)
+            array('Name' => 'Instance Name', 'Value' => $instanceName)
             )
           );
         }
