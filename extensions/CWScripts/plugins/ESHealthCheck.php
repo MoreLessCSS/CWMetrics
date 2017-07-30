@@ -36,9 +36,9 @@ public function getMetric()
          "active_shards_percent_as_number" => $elasticHealth['active_shards_percent_as_number']
        );
    }
-   public function getUnit($alarmName=null)
+   public function getUnit()
    {
-       if(($alarmName != false)) {
+       if(($state != false)) {
          return array(
          "status" => "None",
          "number_of_nodes" => "Count",
@@ -50,7 +50,7 @@ public function getMetric()
        );
      }
      else {
-       switch ($alarmName) {
+       switch ($state) {
          case $this->name . " status warning":
            return "None";
          case $this->name . " status error":
