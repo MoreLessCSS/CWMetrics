@@ -25,9 +25,11 @@ foreach ($config -> metrics as $metrics) {
        if (class_exists($metric->name)){
             $ref = $metric->name;
             $obj = new $ref();
+       echo "CLASS EXISTS\n";
             }
        else {
             $monitoringController = new $className($metric, $metric->name);
+       echo "NEW CLASS\n";
             }
         $metrics = $monitoringController->getMetric();
         if(is_array($metrics)) {
