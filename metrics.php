@@ -13,7 +13,7 @@ if ($config === false)
 $instanceId = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
 $instanceName = file_get_contents("http://169.254.169.254/latest/meta-data/hostname");
 
-echo "instanceID:$instanceId\n";
+echo "\ninstanceID:$instanceId\n";
 
 $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
