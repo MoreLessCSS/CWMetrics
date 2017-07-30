@@ -50,6 +50,7 @@ foreach ($config -> metrics as $metrics) {
             array('Name' => 'Instance Name', 'Value' => $instanceName)
             )
           );
+          echo "var: " . (dump_var($pushMetrics) . "\n";
         }
     }
 }
