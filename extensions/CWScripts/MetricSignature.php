@@ -10,7 +10,6 @@ abstract class MetricSignature
     {
         $this->config = $config;
         $this->name = $name;
-
     }
     abstract public function getMetric();
 

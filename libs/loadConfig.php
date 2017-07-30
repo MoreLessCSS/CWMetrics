@@ -19,5 +19,5 @@ function getCloudWatchClient($config)
 
     function getConfigFile()
     {
-        return json_decode(file_get_contents(APPLICATION_PATH.'/config.json'));
+        return json_decode(file_get_contents(APPLICATION_PATH.'/config/MasterNode/config.json'));
     }

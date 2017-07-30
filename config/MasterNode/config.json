@@ -24,6 +24,12 @@
                 "port": "22",
                 "namespace": "Vendo-ZML-Monitor",
                 "description": "Monitors port 22"
+            },
+            "ElasticHealthCheck" : {
+                "plugin" : "ESHealthCheck",
+                "url": "http://127.0.0.1:9200/_cluster/health",
+                "namespace": "Vendo-ZML-Monitor",
+                "description": "elastic health check _cluster/health"
             }
 
         }
