@@ -2,7 +2,7 @@
 namespace CWScripts\plugins;
 use CWScripts\MetricSignature;
 
-class PortMonitor extends MetricSignature
+class PortMonitor1 extends MetricSignature
 {
   private $domain;
   private $port;
