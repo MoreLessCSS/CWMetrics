@@ -15,7 +15,7 @@
                 "namespace": "portMonitor",
                 "description": "Monitors port 22"
             },
-            "PortMonitor2" : {
+            "PortMonitor" : {
                 "name" : "portMonitor",
                 "domain": "localhost",
                 "port": "24",
