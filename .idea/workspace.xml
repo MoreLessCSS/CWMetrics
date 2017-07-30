@@ -68,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/metrics.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
-              <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+              <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -570,7 +570,7 @@
     <entry file="file://$PROJECT_DIR$/metrics.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
-          <caret line="46" column="55" lean-forward="false" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="61" />
           <folding />
         </state>
       </provider>
