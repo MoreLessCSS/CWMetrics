@@ -17,7 +17,9 @@ public function getMetric()
    {
        $elasticHealth = @file_get_contents($this->elasticUrl);
        if ($elasticHealth === false) {
+           echo "OUT\n";
            return 0;
+
        }
        $elasticHealth = json_decode($elasticHealth, true);
        $status = array("green" => 2, "yellow" => 1, "red" => 0);
