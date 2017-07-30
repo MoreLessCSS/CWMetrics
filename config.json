@@ -6,7 +6,7 @@
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "23",
-                "namespace": "CWMonitor",
+                "namespace": "CWMonitor1",
                 "description": "Monitors port 8080"
             },
             "CheckPort22" : {
@@ -14,7 +14,7 @@
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "22",
-                "namespace": "CWMonitor",
+                "namespace": "CWMonitor1",
                 "description": "Monitors port 22"
             },
             "CheckPort80" : {
@@ -22,7 +22,7 @@
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "80",
-                "namespace": "CWMonitor",
+                "namespace": "CWMonitor1",
                 "description": "Monitors port 22"
             }
 
