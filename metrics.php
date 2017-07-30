@@ -19,11 +19,11 @@ $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
     $className = "CWScripts\\plugins\\" . $metric->plugin;
-    $monitoringController = new $className($metric, $metric->plugin);
-    $metrics = $monitoringController->getMetric();
+    $CWController = new $className($metric, $metric->plugin);
+    $metrics = $CWController->getMetric();
 
         if(is_array($metrics)) {
-          $units = $monitoringController->getUnit();
+          $units = $CWController->getUnit();
         foreach ($metrics as $metricId => $value) {
          $pushMetrics[$metric->namespace][] =  array(
           'Unit'       => $units[$metricId],
@@ -32,14 +32,14 @@ foreach ($config -> metrics as $metrics) {
           'Timestamp'  => time(),
           'Dimensions' => array(
             array('Name' => 'InstanceId', 'Value' => $instanceId),
-            array('Name' => 'Metrics', 'Value' => $metricName)
+            array('Name' => 'Instance Name', 'Value' => $instanceName)
             )
           );
          }
         }
         else {
           $pushMetrics[$metric->namespace][] =  array(
-          'Unit'       => $monitoringController->getUnit(),
+          'Unit'       => $CWController->getUnit(),
           'MetricName' => $metricName,
           'Value'      => $metrics,
           'Timestamp'  => time(),
