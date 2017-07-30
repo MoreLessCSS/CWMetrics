@@ -41,7 +41,7 @@ public function getMetric()
    if ($this->state = false){
    return "None";
    };
-       elseif($alarmName === null) {
+       if($alarmName === null) {
          return array(
          "status" => "None",
          "number_of_nodes" => "Count",
