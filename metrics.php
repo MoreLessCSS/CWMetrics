@@ -22,8 +22,8 @@ foreach ($config -> metrics as $metrics) {
        echo "MetricName=$metricName\n";
        echo "Metric-name=$metric->name\n";
 
-       if (class_exists($metric->name)){
-            $ref = $metric->name;
+       if (class_exists("CWScripts\\" . $metric->name)){
+            $ref = "CWScripts\\" . $metric->name;
             $obj = new $ref();
        echo "CLASS EXISTS\n";
             }
