@@ -40,6 +40,7 @@ public function getMetric()
    {
    if ($this->state = false){
    return "None";
+   exit;
    };
        if($alarmName === null) {
          return array(
