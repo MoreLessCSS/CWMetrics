@@ -17,9 +17,9 @@ echo "instanceID:$instanceId\n";
 $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
-       $className = "CWScripts\\plugins\\" . $metricName;
-       if (var_dump(class_exists($metricName))){
-            $ref = $metricName;
+       $className = "CWScripts\\plugins\\" . $metricName->$name;
+       if (var_dump(class_exists($metricName->$name))){
+            $ref = $metricName->$name;
             $obj = new $ref();
             }
        else {
