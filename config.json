@@ -1,24 +1,24 @@
 {
     "metrics": [
         {
-            "CheckPort22" : {
+            "CheckPort23" : {
                 "name" : "PortMonitor",
                 "domain": "localhost",
                 "port": "23",
                 "namespace": "portMonitor_23",
                 "description": "Monitors port 8080"
             },
-            "PortMonitor1" : {
-                "name" : "PortMonitor",
+            "CheckPort22" : {
+                "name" : "PortMonitor1",
                 "domain": "localhost",
                 "port": "22",
                 "namespace": "portMonitor",
                 "description": "Monitors port 22"
             },
-            "PortMonitor" : {
+            "CheckPort80" : {
                 "name" : "PortMonitor",
                 "domain": "localhost",
-                "port": "24",
+                "port": "80",
                 "namespace": "portMonitor_22",
                 "description": "Monitors port 22"
             }
