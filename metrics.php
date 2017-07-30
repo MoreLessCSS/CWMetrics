@@ -18,8 +18,13 @@ $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
        $className = "CWScripts\\plugins\\" . $metricName;
-       $monitoringController = new $className($metric, $metricName);
-
+       if var_dump(class_exists($metricName)){
+            $ref = $metricName;
+            $obj = new $ref();
+            }
+       else {
+            $monitoringController = new $className($metric, $metricName);
+            }
         $metrics = $monitoringController->getMetric();
         if(is_array($metrics)) {
           $units = $monitoringController->getUnit();
