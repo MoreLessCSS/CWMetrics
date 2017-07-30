@@ -19,20 +19,9 @@ foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
     $className = "CWScripts\\plugins\\" . $metric->name;
 
-       echo "MetricName=$metricName\n";
-       echo "Metric-name=$metric->name\n";
-       $class = $metric->name;
 
-       if (class_exists($class)){
-            $ref = $class;
-            $obj = new $ref();
-       echo "CLASS EXISTS\n";
-            }
-       else {
             $monitoringController = new $className($metric, $metric->name);
-       echo "NEW CLASS\n";
-            }
-        $metrics = $monitoringController->getMetric();
+         $metrics = $monitoringController->getMetric();
         if(is_array($metrics)) {
           $units = $monitoringController->getUnit();
         foreach ($metrics as $metricId => $value) {
