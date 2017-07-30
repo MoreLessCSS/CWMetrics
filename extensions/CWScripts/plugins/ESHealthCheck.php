@@ -38,7 +38,7 @@ public function getMetric()
    }
    public function getUnit()
    {
-       if(($state != false)) {
+       if(($state = true)) {
          return array(
          "status" => "None",
          "number_of_nodes" => "Count",
