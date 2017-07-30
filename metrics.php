@@ -23,6 +23,7 @@ foreach ($config -> metrics as $metrics) {
     $metrics = $CWController->getMetric();
 
         if(is_array($metrics)) {
+        echo "hier 1\n";
           $units = $CWController->getUnit();
         foreach ($metrics as $metricId => $value) {
          $pushMetrics[$metric->namespace][] =  array(
@@ -38,6 +39,7 @@ foreach ($config -> metrics as $metrics) {
          }
         }
         else {
+        echo "hier 2\n";
           $pushMetrics[$metric->namespace][] =  array(
           'Unit'       => $CWController->getUnit(),
           'MetricName' => $metricName,

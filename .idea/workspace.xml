@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f88168b-1be9-4664-b571-e538816b41b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php" afterPath="$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metrics.php" afterPath="$PROJECT_DIR$/metrics.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,21 +54,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ESHealthCheck.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ESHealthCheck.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="857">
-              <caret line="76" column="36" lean-forward="true" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+            <state relative-caret-position="24">
+              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metrics.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="metrics.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/metrics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="697">
+              <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -108,12 +108,12 @@
         <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php" />
-        <option value="$PROJECT_DIR$/metrics.php" />
         <option value="$PROJECT_DIR$/libs/loadConfig.php" />
         <option value="$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php" />
         <option value="$PROJECT_DIR$/../cloudwatch-script-php-master/src/CloudWatchScript/Plugins/ElasticsMonitoring.php" />
         <option value="$PROJECT_DIR$/config/MasterNode/config.json" />
         <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php" />
+        <option value="$PROJECT_DIR$/metrics.php" />
       </list>
     </option>
   </component>
@@ -557,14 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/loadConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -605,18 +597,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metrics.php">
+    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="24">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/ESHealthCheck.php">
+    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="76" column="36" lean-forward="true" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+        <state relative-caret-position="374">
+          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metrics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="20" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
           <folding />
         </state>
       </provider>
