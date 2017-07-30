@@ -2,12 +2,20 @@
     "metrics": [
         {
             "PortMonitor" : {
-                "name" : "portMonitor",
+                "name" : "portMonitor_23",
                 "domain": "localhost",
-                "port": "222",
-                "namespace": "portMonitor",
+                "port": "23",
+                "namespace": "portMonitor_23",
                 "description": "Monitors port 8080"
+            },
+            "PortMonitor" : {
+                "name" : "portMonitor_22",
+                "domain": "localhost",
+                "port": "22",
+                "namespace": "portMonitor_22",
+                "description": "Monitors port 22"
             }
+
         }
     ]
 }

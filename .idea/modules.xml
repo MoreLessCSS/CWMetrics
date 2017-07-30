@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cwm.iml" filepath="$PROJECT_DIR$/.idea/cwm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/CWMetrics.iml" filepath="$PROJECT_DIR$/.idea/CWMetrics.iml" />
     </modules>
   </component>
 </project>
