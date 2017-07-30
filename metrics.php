@@ -17,16 +17,16 @@ echo "instanceID:$instanceId\n";
 $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
-       $className = "CWScripts\\plugins\\" . $metricName;
+       $className = "CWScripts\\plugins\\" . $metric->name;
        echo "MetricName=$metricName\n";
        echo "Metric-name=$metric->name\n";
 
-       if (var_dump(class_exists($metricName))){
-            $ref = $metricName;
+       if (var_dump(class_exists($metric->name))){
+            $ref = $metric->name;
             $obj = new $ref();
             }
        else {
-            $monitoringController = new $className($metric, $metricName);
+            $monitoringController = new $className($metric, $metric->name);
             }
         $metrics = $monitoringController->getMetric();
         if(is_array($metrics)) {
