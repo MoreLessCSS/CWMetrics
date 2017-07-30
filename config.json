@@ -9,7 +9,7 @@
                 "description": "Monitors port 8080"
             },
             "CheckPort22" : {
-                "name" : "PortMonitor1",
+                "name" : "PortMonitor",
                 "domain": "localhost",
                 "port": "22",
                 "namespace": "ELB Monitoring",
