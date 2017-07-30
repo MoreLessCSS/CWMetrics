@@ -39,7 +39,7 @@ public function getMetric()
    public function getUnit($alarmName=null)
    {
    if ($this->state = false){
-   return: none
+   return "None";
    };
        elseif($alarmName === null) {
          return array(
