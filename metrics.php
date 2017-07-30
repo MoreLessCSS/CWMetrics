@@ -11,6 +11,7 @@ if ($config === false)
         die();
     }
 $instanceId = file_get_contents("http://169.254.169.254/latest/meta-data/instance-id");
+$instanceName = file_get_contents("http://169.254.169.254/latest/meta-data/hostname");
 
 echo "instanceID:$instanceId\n";
 
@@ -43,7 +44,8 @@ foreach ($config -> metrics as $metrics) {
           'Value'      => $metrics,
           'Timestamp'  => time(),
           'Dimensions' => array(
-            array('Name' => 'InstanceId', 'Value' => $instanceId)
+            array('Name' => 'InstanceId', 'Value' => $instanceId),
+            array('Name' => 'Instance Name', 'Value' => $InstanceName)
             )
           );
         }
