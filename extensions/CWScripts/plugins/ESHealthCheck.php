@@ -79,3 +79,4 @@ public function getAlarms()
           return $this->name . " status";
       }
     }
+}
