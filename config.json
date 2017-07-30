@@ -2,7 +2,7 @@
     "metrics": [
         {
             "CheckPort23" : {
-                "name" : "CheckPort23_NAME",
+
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "23",
@@ -10,7 +10,7 @@
                 "description": "Monitors port 8080"
             },
             "CheckPort22" : {
-                "name" : "CheckPort22_NAME",
+
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "22",
@@ -18,7 +18,7 @@
                 "description": "Monitors port 22"
             },
             "CheckPort80" : {
-                "name" : "CheckPort80_NAME",
+
                 "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "80",

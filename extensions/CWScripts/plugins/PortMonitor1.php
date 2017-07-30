@@ -13,8 +13,7 @@ class PortMonitor1 extends MetricSignature
        parent::__construct($config, $name);
        $this->domain = $this->config->domain;
        $this->port = $this->config->port;
-  echo "config:" . $config . "\n";
-  echo "config:" . $name . "\n";
+
      }
 
   public function getMetric()
