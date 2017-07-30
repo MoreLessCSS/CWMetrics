@@ -18,7 +18,7 @@ $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
        $className = "CWScripts\\plugins\\" . $metricName;
-       if var_dump(class_exists($metricName)){
+       if (var_dump(class_exists($metricName))){
             $ref = $metricName;
             $obj = new $ref();
             }
