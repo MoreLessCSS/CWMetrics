@@ -20,7 +20,6 @@ public function getMetric()
        if ($elasticHealth === false) {
            echo "OUT\n";
            $state=false;
-
            return 0;
 
        }
@@ -50,6 +49,8 @@ public function getMetric()
        );
      }
      else {
+echo "var: " . var_dump($state) . "\n\n";
+echo "var: " . var_dump($this) . "\n\n\n";
         return "None";
        switch ($state) {
          case $this->name . " status warning":
