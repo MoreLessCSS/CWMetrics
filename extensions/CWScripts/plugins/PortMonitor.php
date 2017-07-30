@@ -23,14 +23,14 @@ class PortMonitor extends MetricSignature
 
           if (!$file) {
               $status = -1;  // Site is down
-            echo "port " . $this->port . "status NOT return code " . $status . "\n";
+            echo "port " . $this->port . " status NOT return code: " . $status . "\n";
             return 1;
           } else {
 
               fclose($file);
               $status = ($stoptime - $starttime) * 1000;
               $status = floor($status);
-              echo "port " . $this->port . "status OK return code: " . $status . "\n";
+              echo "port " . $this->port . " status OK return code: " . $status . "\n";
          return 0;
           }
   }
