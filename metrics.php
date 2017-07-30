@@ -26,7 +26,7 @@ foreach ($config -> metrics as $metrics) {
         foreach ($metrics as $metricId => $value) {
          $pushMetrics[$metric->namespace][] =  array(
           'Unit'       => $units[$metricId],
-          
+          'MetricName' => $metricName . " " . $metricId,
           'Value'      => $value,
           'Timestamp'  => time(),
           'Dimensions' => array(
@@ -39,12 +39,12 @@ foreach ($config -> metrics as $metrics) {
         else {
           $pushMetrics[$metric->namespace][] =  array(
           'Unit'       => $monitoringController->getUnit(),
-
+          'MetricName' => $metricName,
           'Value'      => $metrics,
           'Timestamp'  => time(),
           'Dimensions' => array(
             array('Name' => 'InstanceId', 'Value' => $instanceId),
-            array('Name' => 'Metrics', 'Value' => $metricName)
+            array('Name' => 'Metrics', 'Value' => "test")
             )
           );
         }
