@@ -6,6 +6,7 @@ use Closure;
 class ESHealthCheck extends MetricSignature
 {
   private $elasticUrl;
+  private $state;
 
 public function __construct($config, $name)
      {
@@ -18,6 +19,8 @@ public function getMetric()
        $elasticHealth = @file_get_contents($this->elasticUrl);
        if ($elasticHealth === false) {
            echo "OUT\n";
+           $state=false;
+
            return 0;
 
        }
@@ -35,7 +38,7 @@ public function getMetric()
    }
    public function getUnit($alarmName=null)
    {
-       if($alarmName === null) {
+       if(($alarmName != false)) {
          return array(
          "status" => "None",
          "number_of_nodes" => "Count",
@@ -45,8 +48,6 @@ public function getMetric()
          "unassigned_shards" => "Count",
          "active_shards_percent_as_number" => "Percent"
        );
-
-       echo "HIER UNITS RETURN ARRAY\n";
      }
      else {
        switch ($alarmName) {
