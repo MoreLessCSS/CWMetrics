@@ -1,6 +1,7 @@
 <?php
 namespace CWScripts\plugins;
 use CWScripts\MetricSignature;
+use Closure;
 
 class ESHealthCheck extends MetricSignature
 {
