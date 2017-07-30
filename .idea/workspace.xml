@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f88168b-1be9-4664-b571-e538816b41b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php" afterPath="$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php" afterPath="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php" afterPath="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php" />
     </list>
@@ -29,14 +28,14 @@
       <file leaf-file-name="PortMonitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="289">
+              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetricSignature.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MetricSignature.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -56,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortMonitor1.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PortMonitor1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+            <state relative-caret-position="272">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -101,9 +100,9 @@
       <list>
         <option value="$PROJECT_DIR$/metrics.php" />
         <option value="$PROJECT_DIR$/config.json" />
-        <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php" />
         <option value="$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php" />
         <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php" />
+        <option value="$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php" />
       </list>
     </option>
   </component>
@@ -545,14 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/loadConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -561,18 +552,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php">
+    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor1.php">
+    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/plugins/PortMonitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="289">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensions/CWScripts/MetricSignature.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding />
         </state>
       </provider>
