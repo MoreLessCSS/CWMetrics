@@ -17,11 +17,10 @@ echo "instanceID:$instanceId\n";
 $pushMetrics = array();
 foreach ($config -> metrics as $metrics) {
     foreach ($metrics as $metricName => $metric) {
-    $className = "CWScripts\\plugins\\" . $metric->name;
+    $className = "CWScripts\\plugins\\" . $metric->plugin;
+    $monitoringController = new $className($metric, $metric->plugin);
+    $metrics = $monitoringController->getMetric();
 
-
-            $monitoringController = new $className($metric, $metric->name);
-         $metrics = $monitoringController->getMetric();
         if(is_array($metrics)) {
           $units = $monitoringController->getUnit();
         foreach ($metrics as $metricId => $value) {

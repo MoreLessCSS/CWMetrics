@@ -2,21 +2,24 @@
     "metrics": [
         {
             "CheckPort23" : {
-                "name" : "PortMonitor",
+                "name" : "CheckPort23_NAME",
+                "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "23",
                 "namespace": "ELB Monitoring",
                 "description": "Monitors port 8080"
             },
             "CheckPort22" : {
-                "name" : "PortMonitor",
+                "name" : "CheckPort22_NAME",
+                "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "22",
                 "namespace": "ELB Monitoring",
                 "description": "Monitors port 22"
             },
             "CheckPort80" : {
-                "name" : "PortMonitor",
+                "name" : "CheckPort80_NAME",
+                "plugin" : "PortMonitor",
                 "domain": "localhost",
                 "port": "80",
                 "namespace": "ELB Monitoring",
