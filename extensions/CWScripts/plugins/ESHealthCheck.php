@@ -45,12 +45,15 @@ public function getMetric()
          "unassigned_shards" => "Count",
          "active_shards_percent_as_number" => "Percent"
        );
+
+       echo "HIER UNITS RETURN ARRAY\n";
      }
      else {
        switch ($alarmName) {
          case $this->name . " status warning":
            return "None";
          case $this->name . " status error":
+         echo "HIER UNITS RETURN NON\n";
            return "None";
        }
      }
