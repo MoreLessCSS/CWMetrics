@@ -20,6 +20,7 @@ foreach ($config -> metrics as $metrics) {
        $className = "CWScripts\\plugins\\" . $metricName;
        echo "MetricName=$metricName\n";
        echo "Metric-name=$metric->name\n";
+        echo "Metric-name=$metrics->name\n";
 
        if (var_dump(class_exists($metricName))){
             $ref = $metricName;
