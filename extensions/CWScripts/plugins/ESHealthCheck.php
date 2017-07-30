@@ -38,7 +38,7 @@ public function getMetric()
    }
    public function getUnit()
    {
-       if(($state = true)) {
+       if(($state != false)) {
          return array(
          "status" => "None",
          "number_of_nodes" => "Count",
@@ -50,6 +50,7 @@ public function getMetric()
        );
      }
      else {
+        return "None";
        switch ($state) {
          case $this->name . " status warning":
            return "None";
