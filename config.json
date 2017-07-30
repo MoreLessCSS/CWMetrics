@@ -1,0 +1,13 @@
+{
+    "metrics": [
+        {
+            "PortMonitor" : {
+                "name" : "portMonitor",
+                "domain": "localhost",
+                "port": "222",
+                "namespace": "portMonitor",
+                "description": "Monitors port 8080"
+            }
+        }
+    ]
+}

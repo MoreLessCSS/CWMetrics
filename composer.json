@@ -1,0 +1,12 @@
+{
+  "name" : "CWAutoload",
+  "description" : "watch metrics monitoring for ec2",
+  "require": {
+    "aws/aws-sdk-php": "3.32.1"
+  },
+  "autoload": {
+    "psr-0": {
+      "CWScripts\\": "extensions/"
+    }
+  }
+}
