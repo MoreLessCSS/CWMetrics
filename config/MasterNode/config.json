@@ -27,7 +27,7 @@
             },
             "ElasticHealthCheck" : {
                 "plugin" : "ESHealthCheck",
-                "elasticUrl": "return.json",
+                "elasticUrl": "return1.json",
                 "namespace": "Vendo-ZML-Monitor",
                 "description": "elastic health check _cluster/health"
             }
