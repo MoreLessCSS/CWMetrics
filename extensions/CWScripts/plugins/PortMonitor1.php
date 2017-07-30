@@ -6,6 +6,8 @@ class PortMonitor1 extends MetricSignature
 {
   private $domain;
   private $port;
+  echo "config:" . $config . "\n;"
+  echo "config:" . $name . "\n;"
 
   public function __construct($config, $name)
      {
